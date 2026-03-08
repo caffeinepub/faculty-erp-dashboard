@@ -66,18 +66,18 @@ export default {
           border: "oklch(var(--sidebar-border))",
           ring: "oklch(var(--sidebar-ring))",
         },
-        // ERP custom colors
-        teal: {
-          50: "#F0FDFA",
-          100: "#CCFBF1",
-          200: "#99F6E4",
-          300: "#5EEAD4",
-          400: "#2DD4BF",
-          500: "#14B8A6",
-          600: "#0D9488",
-          700: "#0F766E",
-          800: "#115E59",
-          900: "#134E4A",
+        // ERP custom colors — amber/orange brand scale
+        amber: {
+          50: "#FFF8ED",
+          100: "#FDE8C4",
+          200: "#FBCE8A",
+          300: "#F8B660",
+          400: "#F5BC6E",
+          500: "#F2AA4C",
+          600: "#D4892A",
+          700: "#B06A18",
+          800: "#8A500F",
+          900: "#6B3C0A",
         },
       },
       fontFamily: {
@@ -94,7 +94,7 @@ export default {
       boxShadow: {
         xs: "0 1px 2px 0 rgba(0,0,0,0.05)",
         card: "0 1px 3px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.06)",
-        "card-hover": "0 8px 30px rgba(20, 184, 166, 0.15)",
+        "card-hover": "0 8px 30px rgba(242, 170, 76, 0.15)",
         sidebar: "4px 0 24px rgba(0,0,0,0.15)",
       },
       spacing: {

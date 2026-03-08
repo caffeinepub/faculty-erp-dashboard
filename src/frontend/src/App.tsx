@@ -75,7 +75,7 @@ export default function App() {
                   href={`https://caffeine.ai?utm_source=caffeine-footer&utm_medium=referral&utm_content=${encodeURIComponent(window.location.hostname)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#14B8A6] hover:underline font-medium"
+                  className="text-[#D4892A] hover:underline font-medium"
                 >
                   caffeine.ai
                 </a>

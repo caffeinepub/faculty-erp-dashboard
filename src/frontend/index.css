@@ -6,67 +6,67 @@
   :root {
     --radius: 0.75rem;
 
-    /* EduERP Teal Academic Theme */
+    /* Faculty ERP — Black (#101820) & Orange (#F2AA4C) Theme */
     /* Page background #F8FAFC */
     --background: 0.982 0.004 247.858;
-    /* Primary text #1F2937 */
-    --foreground: 0.278 0.029 256.848;
+    /* Primary text #101820 */
+    --foreground: 0.165 0.025 250;
     /* Card white #FFFFFF */
     --card: 1 0 0;
-    --card-foreground: 0.278 0.029 256.848;
+    --card-foreground: 0.165 0.025 250;
     /* Popover white */
     --popover: 1 0 0;
-    --popover-foreground: 0.278 0.029 256.848;
-    /* Primary teal #14B8A6 */
-    --primary: 0.696 0.17 162.48;
-    --primary-foreground: 1 0 0;
-    /* Secondary #F0FDFA */
-    --secondary: 0.98 0.014 162;
-    --secondary-foreground: 0.478 0.133 162;
+    --popover-foreground: 0.165 0.025 250;
+    /* Primary amber/orange #F2AA4C */
+    --primary: 0.77 0.15 65;
+    --primary-foreground: 0.12 0.02 250;
+    /* Secondary — light amber tint */
+    --secondary: 0.96 0.025 65;
+    --secondary-foreground: 0.5 0.08 65;
     /* Muted #F3F4F6 */
     --muted: 0.965 0.003 247;
     /* Secondary text #6B7280 */
     --muted-foreground: 0.556 0.013 253;
-    /* Accent teal light */
-    --accent: 0.96 0.02 162;
-    --accent-foreground: 0.478 0.133 162;
+    /* Accent amber light */
+    --accent: 0.94 0.04 65;
+    --accent-foreground: 0.5 0.08 65;
     /* Destructive red */
     --destructive: 0.637 0.237 25.331;
     --destructive-foreground: 1 0 0;
     /* Border #E5E7EB */
     --border: 0.922 0.004 253;
     --input: 0.922 0.004 253;
-    --ring: 0.696 0.17 162.48;
+    --ring: 0.77 0.15 65;
 
-    /* Chart colors */
-    --chart-1: 0.696 0.17 162.48;
-    --chart-2: 0.627 0.265 303.9;
-    --chart-3: 0.6 0.118 184.704;
+    /* Chart colors — orange-led warm palette */
+    --chart-1: 0.77 0.15 65;
+    --chart-2: 0.65 0.12 50;
+    --chart-3: 0.55 0.09 40;
     --chart-4: 0.828 0.189 84.429;
-    --chart-5: 0.769 0.188 70.08;
+    --chart-5: 0.556 0.013 253;
 
-    /* Sidebar - #0F766E */
-    --sidebar: 0.478 0.133 162;
+    /* Sidebar — #101820 near-black navy dark */
+    --sidebar: 0.165 0.025 250;
     --sidebar-foreground: 1 0 0;
-    --sidebar-primary: 0.76 0.177 162.48;
-    --sidebar-primary-foreground: 1 0 0;
-    /* Sidebar accent #115E59 */
-    --sidebar-accent: 0.418 0.118 162;
+    --sidebar-primary: 0.77 0.15 65;
+    --sidebar-primary-foreground: 0.12 0.02 250;
+    /* Sidebar accent — slightly lighter dark */
+    --sidebar-accent: 0.13 0.02 250;
     --sidebar-accent-foreground: 1 0 0;
-    --sidebar-border: 0.55 0.16 162;
-    --sidebar-ring: 0.76 0.177 162.48;
+    --sidebar-border: 0.22 0.025 250;
+    --sidebar-ring: 0.77 0.15 65;
 
     /* Custom ERP tokens */
-    --erp-sidebar-bg: #0F766E;
-    --erp-sidebar-hover: #115E59;
-    --erp-sidebar-active: #0D9488;
-    --erp-primary: #14B8A6;
-    --erp-primary-mid: #2DD4BF;
-    --erp-primary-light: #99F6E4;
+    --erp-sidebar-bg: #101820;
+    --erp-sidebar-hover: #1a2535;
+    --erp-sidebar-active: #F2AA4C;
+    --erp-primary: #F2AA4C;
+    --erp-primary-mid: #F5BC6E;
+    --erp-primary-light: #FDE8C4;
     --erp-page-bg: #F8FAFC;
     --erp-card: #FFFFFF;
     --erp-border: #E5E7EB;
-    --erp-text-primary: #1F2937;
+    --erp-text-primary: #101820;
     --erp-text-secondary: #6B7280;
   }
 
@@ -123,8 +123,8 @@
 }
 
 .erp-nav-item.active {
-  background-color: rgba(45, 212, 191, 0.18);
-  border-left: 3px solid #2DD4BF;
+  background-color: rgba(242, 170, 76, 0.18);
+  border-left: 3px solid #F2AA4C;
   color: #fff;
 }
 
@@ -138,9 +138,9 @@
 }
 
 .erp-card-hover:hover {
-  box-shadow: 0 8px 30px rgba(20, 184, 166, 0.15);
+  box-shadow: 0 8px 30px rgba(242, 170, 76, 0.15);
   transform: translateY(-1px);
-  border-color: #14B8A6;
+  border-color: #F2AA4C;
 }
 
 /* Stats card */
@@ -155,7 +155,7 @@
 
 /* Gradient text */
 .erp-gradient-text {
-  background: linear-gradient(135deg, #14B8A6, #2DD4BF);
+  background: linear-gradient(135deg, #F2AA4C, #F5BC6E);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -163,7 +163,7 @@
 
 /* Welcome banner */
 .erp-welcome-banner {
-  background: linear-gradient(135deg, #14B8A6 0%, #2DD4BF 60%, #99F6E4 100%);
+  background: linear-gradient(135deg, #101820 0%, #1a2535 60%, #253347 100%);
 }
 
 /* Animations */
@@ -204,6 +204,6 @@
 
 /* Focus rings */
 *:focus-visible {
-  outline: 2px solid #14B8A6;
+  outline: 2px solid #F2AA4C;
   outline-offset: 2px;
 }

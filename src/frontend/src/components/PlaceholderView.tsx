@@ -29,15 +29,15 @@ export function PlaceholderView({
         className="w-24 h-24 rounded-full flex items-center justify-center mb-6"
         style={{
           background:
-            "linear-gradient(135deg, rgba(20,184,166,0.12), rgba(45,212,191,0.08))",
-          border: "2px dashed #2DD4BF",
+            "linear-gradient(135deg, rgba(242,170,76,0.12), rgba(245,188,110,0.08))",
+          border: "2px dashed #F2AA4C",
         }}
       >
-        <Construction className="w-10 h-10 text-[#14B8A6]" />
+        <Construction className="w-10 h-10 text-[#F2AA4C]" />
       </div>
 
       {/* Title */}
-      <h1 className="text-2xl font-bold text-[#1F2937] mb-2 text-center">
+      <h1 className="text-2xl font-bold text-[#101820] mb-2 text-center">
         {title}
       </h1>
 
@@ -48,8 +48,8 @@ export function PlaceholderView({
         </span>
         <span className="text-[#6B7280] text-xs">›</span>
         <span
-          className="text-xs text-[#14B8A6] px-2 py-0.5 rounded-full font-medium"
-          style={{ background: "rgba(20,184,166,0.08)" }}
+          className="text-xs text-[#D4892A] px-2 py-0.5 rounded-full font-medium"
+          style={{ background: "rgba(242,170,76,0.10)" }}
         >
           {title}
         </span>
@@ -67,7 +67,7 @@ export function PlaceholderView({
           className="h-full rounded-full"
           style={{
             width: "60%",
-            background: "linear-gradient(90deg, #14B8A6, #2DD4BF)",
+            background: "linear-gradient(90deg, #F2AA4C, #F5BC6E)",
           }}
         />
       </div>
@@ -76,7 +76,7 @@ export function PlaceholderView({
         data-ocid="placeholder.dashboard_button"
         onClick={onDashboard}
         className="flex items-center gap-2 h-9 px-5 text-sm font-semibold text-white rounded-lg transition-all hover:shadow-md"
-        style={{ background: "linear-gradient(135deg, #14B8A6, #0D9488)" }}
+        style={{ background: "linear-gradient(135deg, #F2AA4C, #D4892A)" }}
       >
         <ArrowLeft className="w-4 h-4" />
         Go to Dashboard

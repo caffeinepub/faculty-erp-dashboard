@@ -223,17 +223,17 @@ export function Sidebar({
           ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}`}
       >
         {/* Mobile header */}
-        <div className="flex items-center justify-between px-4 py-4 border-b border-teal-600/30 lg:hidden flex-shrink-0">
+        <div className="flex items-center justify-between px-4 py-4 border-b border-white/10 lg:hidden flex-shrink-0">
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg bg-teal-400/20 flex items-center justify-center">
-              <GraduationCap className="w-4 h-4 text-teal-200" />
+            <div className="w-7 h-7 rounded-lg bg-amber-500/20 flex items-center justify-center">
+              <GraduationCap className="w-4 h-4 text-amber-400" />
             </div>
             <span className="text-white font-bold text-base">EduERP</span>
           </div>
           <button
             type="button"
             onClick={onClose}
-            className="p-1.5 rounded-lg text-teal-200 hover:bg-teal-600/30 transition-colors"
+            className="p-1.5 rounded-lg text-amber-300 hover:bg-white/10 transition-colors"
             aria-label="Close sidebar"
           >
             <X className="w-4 h-4" />
@@ -241,19 +241,19 @@ export function Sidebar({
         </div>
 
         {/* Institute Badge */}
-        <div className="px-4 py-3 border-b border-teal-600/30 flex-shrink-0">
+        <div className="px-4 py-3 border-b border-white/10 flex-shrink-0">
           <div className="flex items-center gap-2.5">
             <div
               className="w-8 h-8 rounded-lg flex items-center justify-center text-white text-xs font-bold flex-shrink-0"
-              style={{ background: "rgba(45,212,191,0.2)" }}
+              style={{ background: "rgba(242,170,76,0.2)" }}
             >
-              <GraduationCap className="w-4 h-4 text-teal-200" />
+              <GraduationCap className="w-4 h-4 text-amber-400" />
             </div>
             <div className="min-w-0">
               <p className="text-white text-xs font-semibold truncate leading-tight">
                 Greenfield University
               </p>
-              <p className="text-teal-300 text-[10px] truncate leading-tight">
+              <p className="text-amber-300/70 text-[10px] truncate leading-tight">
                 Academic Year 2025–26
               </p>
             </div>
@@ -276,11 +276,11 @@ export function Sidebar({
                     ${
                       isActive
                         ? "active text-white font-semibold"
-                        : "text-teal-100 font-medium"
+                        : "text-white/80 font-medium"
                     }`}
                 >
                   <span
-                    className={`flex-shrink-0 ${isActive ? "text-teal-200" : "text-teal-300"}`}
+                    className={`flex-shrink-0 ${isActive ? "text-amber-400" : "text-white/50"}`}
                   >
                     {section.icon}
                   </span>
@@ -301,18 +301,18 @@ export function Sidebar({
                   type="button"
                   onClick={() => toggleSection(section.label)}
                   className={`erp-nav-section-header w-full flex items-center gap-3 px-4 py-2.5 text-sm transition-all
-                    ${hasActiveChild ? "text-teal-200" : "text-teal-100"}
+                    ${hasActiveChild ? "text-amber-300" : "text-white/80"}
                     hover:text-white`}
                   aria-expanded={isExpanded}
                 >
-                  <span className="flex-shrink-0 text-teal-300">
+                  <span className="flex-shrink-0 text-white/50">
                     {section.icon}
                   </span>
                   <span className="flex-1 text-left font-semibold text-[13px] truncate">
                     {section.label}
                   </span>
                   <ChevronDown
-                    className={`w-3.5 h-3.5 text-teal-400 flex-shrink-0 transition-transform duration-200 ${
+                    className={`w-3.5 h-3.5 text-white/40 flex-shrink-0 transition-transform duration-200 ${
                       isExpanded ? "rotate-180" : ""
                     }`}
                   />
@@ -332,11 +332,11 @@ export function Sidebar({
                             ${
                               isActive
                                 ? "active text-white font-semibold"
-                                : "text-teal-200 hover:text-white"
+                                : "text-white/70 hover:text-white"
                             }`}
                         >
                           <span
-                            className={`flex-shrink-0 ${isActive ? "text-teal-200" : "text-teal-400"}`}
+                            className={`flex-shrink-0 ${isActive ? "text-amber-400" : "text-white/40"}`}
                           >
                             {item.icon}
                           </span>
@@ -352,8 +352,8 @@ export function Sidebar({
         </nav>
 
         {/* Footer */}
-        <div className="px-4 py-3 border-t border-teal-600/30 flex-shrink-0">
-          <p className="text-teal-400 text-[10px] text-center">
+        <div className="px-4 py-3 border-t border-white/10 flex-shrink-0">
+          <p className="text-white/30 text-[10px] text-center">
             EduERP v2.5.0 · © 2026
           </p>
         </div>

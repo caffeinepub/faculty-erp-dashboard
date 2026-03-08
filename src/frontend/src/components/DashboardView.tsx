@@ -224,7 +224,7 @@ function StatCard({
           <TrendingUp className="w-3 h-3" />
         </div>
       </div>
-      <div className="text-3xl font-bold text-[#1F2937] mb-1 tabular-nums">
+      <div className="text-3xl font-bold text-[#101820] mb-1 tabular-nums">
         {value}
       </div>
       <div className="text-sm text-[#6B7280] font-medium mb-2">{label}</div>
@@ -269,9 +269,9 @@ function QuickActionCard({
         >
           {icon}
         </div>
-        <ArrowRight className="w-4 h-4 text-[#9CA3AF] group-hover:text-[#14B8A6] transition-colors mt-1" />
+        <ArrowRight className="w-4 h-4 text-[#9CA3AF] group-hover:text-[#F2AA4C] transition-colors mt-1" />
       </div>
-      <p className="font-semibold text-[#1F2937] text-sm mb-1">{label}</p>
+      <p className="font-semibold text-[#101820] text-sm mb-1">{label}</p>
       <p className="text-[#6B7280] text-xs leading-relaxed">{description}</p>
     </button>
   );
@@ -311,19 +311,19 @@ export function DashboardView({ onNavigate }: DashboardViewProps) {
       <section
         data-ocid="dashboard.welcome_section"
         className="erp-welcome-banner rounded-2xl p-6 md:p-8 flex items-center justify-between relative overflow-hidden"
-        style={{ boxShadow: "0 4px 24px rgba(20,184,166,0.25)" }}
+        style={{ boxShadow: "0 4px 24px rgba(16,24,32,0.35)" }}
       >
         {/* Decorative circles */}
         <div
-          className="absolute top-0 right-48 w-40 h-40 rounded-full opacity-20"
+          className="absolute top-0 right-48 w-40 h-40 rounded-full opacity-10"
           style={{
-            background: "radial-gradient(circle, #ffffff 0%, transparent 70%)",
+            background: "radial-gradient(circle, #F2AA4C 0%, transparent 70%)",
           }}
         />
         <div
           className="absolute -bottom-8 right-20 w-28 h-28 rounded-full opacity-10"
           style={{
-            background: "radial-gradient(circle, #ffffff 0%, transparent 70%)",
+            background: "radial-gradient(circle, #F2AA4C 0%, transparent 70%)",
           }}
         />
 
@@ -331,25 +331,25 @@ export function DashboardView({ onNavigate }: DashboardViewProps) {
           <h1 className="text-2xl md:text-3xl font-bold text-white mb-1.5">
             Welcome Back, Admin! 👋
           </h1>
-          <p className="text-teal-100 text-sm md:text-base font-medium">
+          <p className="text-amber-200/80 text-sm md:text-base font-medium">
             Manage your institute with ease —{" "}
             <span className="text-white font-semibold">{today}</span>
           </p>
           <div className="flex items-center gap-2 mt-3">
-            <div className="flex items-center gap-1.5 bg-white/15 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1.5 rounded-full">
-              <div className="w-1.5 h-1.5 bg-green-300 rounded-full animate-pulse" />
+            <div className="flex items-center gap-1.5 bg-white/10 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1.5 rounded-full">
+              <div className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" />
               System Online
             </div>
-            <div className="bg-white/15 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1.5 rounded-full">
+            <div className="bg-white/10 backdrop-blur-sm text-white text-xs font-semibold px-3 py-1.5 rounded-full">
               Academic Year 2025–26
             </div>
           </div>
         </div>
 
         <div className="hidden md:flex items-center justify-center relative z-10 flex-shrink-0">
-          <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-2xl bg-white/15 backdrop-blur-sm flex items-center justify-center">
+          <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-2xl bg-amber-500/20 backdrop-blur-sm flex items-center justify-center">
             <GraduationCap
-              className="text-white"
+              className="text-amber-300"
               style={{ width: 48, height: 48 }}
             />
           </div>
@@ -358,10 +358,10 @@ export function DashboardView({ onNavigate }: DashboardViewProps) {
 
       {/* Stats Cards */}
       <section>
-        <h2 className="text-base font-bold text-[#1F2937] mb-4 flex items-center gap-2">
+        <h2 className="text-base font-bold text-[#101820] mb-4 flex items-center gap-2">
           <div
             className="w-1 h-5 rounded-full"
-            style={{ background: "#14B8A6" }}
+            style={{ background: "#F2AA4C" }}
           />
           Overview Statistics
         </h2>
@@ -394,10 +394,10 @@ export function DashboardView({ onNavigate }: DashboardViewProps) {
               <StatCard
                 ocid="dashboard.stats_total_staff_card"
                 icon={
-                  <Users2 className="w-5 h-5" style={{ color: "#14B8A6" }} />
+                  <Users2 className="w-5 h-5" style={{ color: "#F2AA4C" }} />
                 }
-                iconBg="linear-gradient(135deg, rgba(20,184,166,0.12), rgba(45,212,191,0.08))"
-                iconColor="#14B8A6"
+                iconBg="linear-gradient(135deg, rgba(242,170,76,0.14), rgba(245,188,110,0.08))"
+                iconColor="#F2AA4C"
                 label="Total Staff"
                 value={Number(stats.totalStaff).toLocaleString()}
                 trend="+12 this month"
@@ -456,7 +456,7 @@ export function DashboardView({ onNavigate }: DashboardViewProps) {
 
       {/* Quick Actions */}
       <section>
-        <h2 className="text-base font-bold text-[#1F2937] mb-4 flex items-center gap-2">
+        <h2 className="text-base font-bold text-[#101820] mb-4 flex items-center gap-2">
           <div
             className="w-1 h-5 rounded-full"
             style={{ background: "#8B5CF6" }}
@@ -466,8 +466,8 @@ export function DashboardView({ onNavigate }: DashboardViewProps) {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           <QuickActionCard
             ocid="dashboard.add_staff_button"
-            icon={<UserPlus className="w-5 h-5" style={{ color: "#14B8A6" }} />}
-            iconBg="linear-gradient(135deg, rgba(20,184,166,0.12), rgba(45,212,191,0.08))"
+            icon={<UserPlus className="w-5 h-5" style={{ color: "#F2AA4C" }} />}
+            iconBg="linear-gradient(135deg, rgba(242,170,76,0.14), rgba(245,188,110,0.08))"
             label="Add Staff"
             description="Register new faculty or administrative staff"
             onClick={() => onNavigate("add-staff")}
@@ -513,12 +513,12 @@ export function DashboardView({ onNavigate }: DashboardViewProps) {
           }}
         >
           <div className="flex items-center justify-between px-6 py-4 border-b border-[#E5E7EB]">
-            <h3 className="font-bold text-[#1F2937] text-base">
+            <h3 className="font-bold text-[#101820] text-base">
               Recent Activity
             </h3>
             <button
               type="button"
-              className="text-sm font-semibold text-[#14B8A6] hover:text-teal-700 transition-colors"
+              className="text-sm font-semibold text-[#D4892A] hover:text-amber-700 transition-colors"
             >
               View All
             </button>
@@ -567,7 +567,7 @@ export function DashboardView({ onNavigate }: DashboardViewProps) {
                       {/* Content */}
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 mb-0.5 flex-wrap">
-                          <span className="text-sm font-semibold text-[#1F2937]">
+                          <span className="text-sm font-semibold text-[#101820]">
                             {item.actorName}
                           </span>
                           <span
@@ -604,8 +604,8 @@ export function DashboardView({ onNavigate }: DashboardViewProps) {
         >
           <div className="flex items-center justify-between px-6 py-4 border-b border-[#E5E7EB]">
             <div className="flex items-center gap-2">
-              <Bell className="w-4 h-4 text-[#14B8A6]" />
-              <h3 className="font-bold text-[#1F2937] text-base">
+              <Bell className="w-4 h-4 text-[#F2AA4C]" />
+              <h3 className="font-bold text-[#101820] text-base">
                 Announcements
               </h3>
             </div>
@@ -613,7 +613,7 @@ export function DashboardView({ onNavigate }: DashboardViewProps) {
               type="button"
               className="text-xs font-semibold px-3 py-1.5 rounded-lg text-white transition-all hover:shadow-md"
               style={{
-                background: "linear-gradient(135deg, #14B8A6, #0D9488)",
+                background: "linear-gradient(135deg, #F2AA4C, #D4892A)",
               }}
             >
               + Post New
@@ -654,7 +654,7 @@ export function DashboardView({ onNavigate }: DashboardViewProps) {
                         >
                           {config.label}
                         </span>
-                        <p className="text-sm font-semibold text-[#1F2937] leading-snug line-clamp-2">
+                        <p className="text-sm font-semibold text-[#101820] leading-snug line-clamp-2">
                           {item.title}
                         </p>
                       </div>
